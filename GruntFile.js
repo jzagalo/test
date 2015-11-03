@@ -8,7 +8,7 @@ module.exports = function (grunt)
 			},
 			dist: {
 				src: ['src/resources/js/binding.js'],
-				dest: 'src/<%= pkg.name %>.js'
+				dest: 'src/resources/js/<%= pkg.name %>.js'
 			},
 			deps: {
 				src: [
