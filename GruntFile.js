@@ -7,7 +7,7 @@ module.exports = function (grunt)
 				separator: "\n\n"
 			},
 			dist: {
-				src: ['src/resources/js/binding.js'],
+				src: ['src/resources/js/myApp.js'],
 				dest: 'src/resources/js/<%= pkg.name %>.js'
 			},
 			deps: {
@@ -17,7 +17,7 @@ module.exports = function (grunt)
 					'bower_components/bootstrap/dist/js/bootstrap.js',
 					'bower_components/angularjs/angular.min.js',
 				],
-				dest: 'src/<%= pkg.name %>-deps.js'
+				dest: 'src/resources/js/<%= pkg.name %>-deps.js'
 			},
 			css: {
 				src: ['bower_components/bootstrap/dist/css/bootstrap.min.css',
@@ -27,7 +27,7 @@ module.exports = function (grunt)
 			},
 			move: {
 				src: ['bower_components/angularjs/angular.min.js.map'],
-				dest: 'src/angular.min.js.map'
+				dest: 'src/resources/js/angular.min.js.map'
 			}
 		},
 
